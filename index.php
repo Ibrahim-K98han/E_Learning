@@ -12,7 +12,7 @@
 </head>
 <body>
    <!--Start Navigation-->
-   <nav class="navbar navbar-expand-sm navbar-dark bg-dark pl-5 fixed-top">
+   <nav class="navbar navbar-expand-sm navbar-dark pl-5 fixed-top">
   <a class="navbar-brand" href="index.php">E-Learning</a>
   <span class="navbar-text">Learn and Implement</span>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,6 +68,151 @@
       </div>
    </div>
    <!-- End Text Banner -->
+
+  
+   <!-- Start most popular course -->
+    <div class="container mt-5">
+      <h1 class="text-center">Popular Course</h1>
+      <!-- Start Most Popular Course 1st card deck -->
+      <div class="card-deck mt-4">
+        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
+          <div class="card">
+            <img src="images/java.png" alt="Guitar" />
+            <div class="card-body">
+              <h5 class="card-title">Learn JAVA Easy Way</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
+          <div class="card">
+            <img src="images/java.png" alt="Guitar" />
+            <div class="card-body">
+              <h5 class="card-title">Learn JAVA Easy Way</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
+          <div class="card">
+            <img src="images/java.png" alt="Guitar" />
+            <div class="card-body">
+              <h5 class="card-title">Learn JAVA Easy Way</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+      </div>
+       <!-- End Most Popular Course 1st card deck -->
+       <!-- Start Most Popular Course 2nd card deck -->
+       <div class="card-deck mt-4">
+        <a href="#" class="btn" style="text-align:left; padding:0px;">
+          <div class="card">
+            <img src="images/python.png" class="card-img-top" alt="Python" />
+            <div class="card-body">
+              <h5 class="card-title">Learn Python</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="btn" style="text-align:left; padding:0px;">
+          <div class="card">
+            <img src="images/python.png" class="card-img-top" alt="Python" />
+            <div class="card-body">
+              <h5 class="card-title">Learn Python</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="btn" style="text-align:left; padding:0px;">
+          <div class="card">
+            <img src="images/python.png" class="card-img-top" alt="Python" />
+            <div class="card-body">
+              <h5 class="card-title">Learn Python</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
+            </div>
+            <div class="card-footer">
+              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
+                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+            </div>
+          </div>
+        </a>
+      </div>
+       <!-- End Most Popular Course 2nd card deck -->
+       <div class="text-center m-2">
+        <a href="#" class="btn btn-danger btn-sm">View All Course</a>
+       </div>
+    </div>
+   <!-- End most popular course -->
+
+   <!-- Start Contact Us -->
+  <div class="container mt-4" id="Contact">
+    <h2 class="text-center mb-4">Contact Us</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <form action="" method="post">
+          <input type="text" class="form-control" name="name" placeholder="Name"><br>
+          <input type="text" class="form-control" name="subject" placeholder="Subject"><br>
+          <input type="email" class="form-control" name="email" placeholder="E-mail"><br>
+          <textarea class="form-control" name="message" placeholder="How can we help you?" style="height:150px;"></textarea><br>
+          <input type="submit" class="btn btn-primary" value="Send" name="submit"><br><br>
+        </form>
+      </div>
+      <div class="col-md-4 stripe text-orange text-center">
+        <h4>E-Learning</h4>
+        <p>E-Learning,
+         Demra Jatrabari,
+         Phone:017518000 <br> 
+         www.e-learning.com
+        </p>
+      </div>
+    </div>
+  </div>
+   <!-- End Contact Us -->
+
+   <!-- Start Students Testimonial -->
+    <div class="container-fluid mt-5" style="background-color: #4B7289" id="feedback">
+        <h1 class="text-center testyheading p-4">Student's Feedback</h1>
+        <div class="row">
+          <div class="col-md-12">
+            <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae voluptas voluptatibus sequi temporibus? Illo aliquam vel ipsam consequuntur laborum?
+                </p>
+                <div class="pic">
+                  <img src="images/placeholder.jpg" alt="">
+                </div>
+                <div class="testimonial-prof">
+                  <h4>Sonam</h4>
+                  <small>Web Developer</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+   <!-- End Students Testimonial -->
 
 
 
