@@ -214,6 +214,56 @@
     </div>
    <!-- End Students Testimonial -->
 
+   <!-- Start social section -->
+   <div class="container-fluid bg-danger">
+    <div class="row text-white text-center p-1">
+      <div class="col-sm">
+        <a href="#" class="text-white social-hover"><i class="fab fa-facebook-f"></i>Facebook</a>
+      </div>
+      <div class="col-sm">
+        <a href="#" class="text-white social-hover"><i class="fab fa-twitter"></i>Twitter</a>
+      </div>
+      <div class="col-sm">
+        <a href="#" class="text-white social-hover"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+      </div>
+      <div class="col-sm">
+        <a href="#" class="text-white social-hover"><i class="fab fa-instagram"></i>Instagram</a>
+      </div>
+    </div>
+   </div>
+    <!-- Start social section -->
+
+    <!-- Start About section -->
+    <div class="container-fluid p-4" style="background-color:#E9ECEF">
+      <div class="container" style="background-color:#E9ECEF">
+        <div class="row text-center">
+          <div class="col-sm">
+            <h5>About Us</h5>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, veritatis quos. Accusamus ratione quod rerum perferendis! Earum odit corporis ullam dicta amet at, non, nobis quisquam, aperiam saepe excepturi maxime.</p>
+          </div>
+          <div class="col-sm">
+            <h5>Category</h5>
+            <a href="#" class="text-dark">Web Development</a><br>
+            <a href="#" class="text-dark">Web Design</a><br>
+            <a href="#" class="text-dark">Web App Dev</a><br>
+            <a href="#" class="text-dark">iOS Development</a><br>
+            <a href="#" class="text-dark">Data Analysis</a><br>
+          </div>
+          <div class="col-sm">
+            <h5>Contact Us</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi nesciunt ipsa rem debitis nostrum aperiam sit atque nihil fugiat!</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- End About section -->
+
+    <!-- Start Footer section -->
+    <footer class="container-fluid bg-dark text-center p-2">
+      <small class="text-white">Copyright &copy; 2023 || E-Learning || Admin Login</small>
+    </footer>
+    <!-- End Footer section -->
 
 
 <script src="js/jquery.min.js"></script>
