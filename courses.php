@@ -1,48 +1,23 @@
 <!-- Start Including Header -->
-    <?php
+<?php
       include('./mainInclude/header.php');
     ?>
 <!-- End Including Header -->
 
-   <!-- Start Video Background -->
-   <div class="container-fluid remove-vid-marg">
-    <div class="vid-parent">
-      <video playsinline autoplay muted loop>
-        <source src="video/banvid.mp4">
-      </video>
-      <div class="vid-overlay"></div>
-    </div>
-    <div class="vid-content">
-      <h1 class="my-content">Welcome to E-Learning</h1>
-      <small class="my-content">learn and implement</small> <br>
-      <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModalCenter">Get Stated</a>
+<!-- Start Course Page Banner -->
+   <div class="container-fluid bg-dark">
+    <div class="row">
+        <img src="./images/coursebanner.jpg" alt="course" 
+        style="height:500px; width:100%; object-fit:cover; box-shadow:10px;">
     </div>
    </div>
-   <!-- End Video Background -->
 
-   <!-- Start Text Banner -->
-   <div class="container-fluid bg-danger txt-banner">
-      <div class="row bottom-banner">
-        <div class="col-sm">
-            <h5><i class="fas fa-book-open mr-3"></i>100+ Online Courses</h5>
-        </div>
-        <div class="col-sm">
-            <h5><i class="fas fa-users mr-3"></i>Expert Instructor</h5>
-        </div>
-        <div class="col-sm">
-            <h5><i class="fas fa-keyboard mr-3"></i>Life Time Access</h5>
-        </div>
-        <div class="col-sm">
-            <h5><i class="fas fa-money mr-3"></i>Money Back Guarantee*</h5>
-        </div>
-      </div>
-   </div>
-   <!-- End Text Banner -->
+<!-- End Course Page Banner -->
 
-  
-   <!-- Start most popular course -->
-    <div class="container mt-5">
-      <h1 class="text-center">Popular Course</h1>
+
+<!-- Start All course -->
+<div class="container mt-5">
+      <h1 class="text-center">All Course</h1>
       <!-- Start Most Popular Course 1st card deck -->
       <div class="card-deck mt-4">
         <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
@@ -110,7 +85,7 @@
             </div>
             <div class="card-footer">
               <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+                <a href="coursedetails.php" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
             </div>
           </div>
         </a>
@@ -123,98 +98,20 @@
             </div>
             <div class="card-footer">
               <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+                <a href="coursedetails.php" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
             </div>
           </div>
         </a>
       </div>
        <!-- End Most Popular Course 2nd card deck -->
-       <div class="text-center m-2">
-        <a href="#" class="btn btn-danger btn-sm">View All Course</a>
-       </div>
+     
     </div>
-   <!-- End most popular course -->
-
-   <!-- Start Contact Us -->
-   <?php
-     include('./contact.php');
-   ?>
-   <!-- End Contact Us -->
-
-   <!-- Start Students Testimonial -->
-    <div class="container-fluid mt-5" style="background-color: #4B7289" id="feedback">
-        <h1 class="text-center testyheading p-4">Student's Feedback</h1>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="testimonial-slider" class="owl-carousel">
-              <div class="testimonial">
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae voluptas voluptatibus sequi temporibus? Illo aliquam vel ipsam consequuntur laborum?
-                </p>
-                <div class="pic">
-                  <img src="images/placeholder.jpg" alt="">
-                </div>
-                <div class="testimonial-prof">
-                  <h4>Sonam</h4>
-                  <small>Web Developer</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-   <!-- End Students Testimonial -->
-
-   <!-- Start social section -->
-   <div class="container-fluid bg-danger">
-    <div class="row text-white text-center p-1">
-      <div class="col-sm">
-        <a href="#" class="text-white social-hover"><i class="fab fa-facebook-f"></i>Facebook</a>
-      </div>
-      <div class="col-sm">
-        <a href="#" class="text-white social-hover"><i class="fab fa-twitter"></i>Twitter</a>
-      </div>
-      <div class="col-sm">
-        <a href="#" class="text-white social-hover"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-      </div>
-      <div class="col-sm">
-        <a href="#" class="text-white social-hover"><i class="fab fa-instagram"></i>Instagram</a>
-      </div>
-    </div>
-   </div>
-    <!-- Start social section -->
-
-    <!-- Start About section -->
-    <div class="container-fluid p-4" style="background-color:#E9ECEF">
-      <div class="container" style="background-color:#E9ECEF">
-        <div class="row text-center">
-          <div class="col-sm">
-            <h5>About Us</h5>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates, veritatis quos. Accusamus ratione quod rerum perferendis! Earum odit corporis ullam dicta amet at, non, nobis quisquam, aperiam saepe excepturi maxime.</p>
-          </div>
-          <div class="col-sm">
-            <h5>Category</h5>
-            <a href="#" class="text-dark">Web Development</a><br>
-            <a href="#" class="text-dark">Web Design</a><br>
-            <a href="#" class="text-dark">Web App Dev</a><br>
-            <a href="#" class="text-dark">iOS Development</a><br>
-            <a href="#" class="text-dark">Data Analysis</a><br>
-          </div>
-          <div class="col-sm">
-            <h5>Contact Us</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio commodi nesciunt ipsa rem debitis nostrum aperiam sit atque nihil fugiat!</p>
-          </div>
-
-        </div>
-      </div>
-    </div>
-    <!-- End About section -->
-
+   <!-- End All course -->
 
 
 
 <!-- Start Including Footer -->
-      <?php
+    <?php
         include ('./mainInclude/footer.php');
       ?>
  <!-- End Including Footer -->
