@@ -16,26 +16,15 @@
           </button>
         </div>
         <div class="modal-body">
-          <!-- start student registration form -->
-              <form>
-                  <div class="form-group">
-                  <i class="fas fa-user"></i><label for="stuname" class="pl-2 font-weight-bold">Name</label>
-                  <input type="text" class="form-control" placeholder="Name" name="stuname" id="stuname">
-                  </div>
-                  <div class="form-group">
-                    <i class="fas fa-envelope"></i><label for="stuemail" class="pl-2 font-weight-bold">Email</label>
-                  <input type="email" class="form-control" placeholder="Email" name="stuemail" id="stuemail">
-                  <small class="form-text">We'll never share your email with anyone else.</small>
-                  </div>
-                  <div class="form-group">
-                    <i class="fas fa-key"></i><label for="stupass" class="pl-2 font-weight-bold">New Password</label>
-                  <input type="password" class="form-control" placeholder="Password" name="stupass" id="stupass">
-                  </div>
-              </form>
-              <!-- end student registration form -->
+          <!-- Start student registration form -->
+          <?php
+            include ('studentRegistration.php');
+          ?>
+          <!-- End student registration form -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Sign Up</button>
+          <span id="successMsg"></span>
+          <button type="button" class="btn btn-primary" onclick="addStu()">Sign Up</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         </div>
       </div>
@@ -117,5 +106,6 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>
+<script type="text/javascript" src="js/ajaxrequest.js"></script>
 </body>
 </html>
