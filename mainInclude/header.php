@@ -22,11 +22,19 @@
     <ul class="navbar-nav custom-nav pl-5">
      <li class="nav-item custom-nav-item"><a href="index.php" class="nav-link">Home</a></li>
      <li class="nav-item custom-nav-item"><a href="courses.php" class="nav-link">Courses</a></li>
-     <li class="nav-item custom-nav-item"><a href="paymentstatus.php" class="nav-link">Payment</a></li>
-     <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Profile</a></li>
-     <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Logout</a></li>
-     <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#stuLoginModalCenter">Login</a></li>
-     <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#stuRegModalCenter">Signup</a></li>
+     <li class="nav-item custom-nav-item"><a href="paymentstatus.php" class="nav-link">Payment Status</a></li>
+      <?php
+        session_start();
+        if(isset($_SESSION['is_login'])){
+          echo '
+          <li class="nav-item custom-nav-item"><a href="#" class="nav-link">My Profile</a></li>
+          <li class="nav-item custom-nav-item"><a href="logout.php" class="nav-link">Logout</a></li>
+          ';
+        }else{
+          echo '<li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#stuLoginModalCenter">Login</a></li>
+          <li class="nav-item custom-nav-item"><a href="#" class="nav-link" data-toggle="modal" data-target="#stuRegModalCenter">Signup</a></li>';
+        }
+      ?>
      <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Feedback</a></li>
      <li class="nav-item custom-nav-item"><a href="#" class="nav-link">Contact</a></li>
     </ul>

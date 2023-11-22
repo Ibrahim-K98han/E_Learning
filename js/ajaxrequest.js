@@ -100,3 +100,30 @@ function clearStuRegField(){
     $("#statusMsg2").html(" ");
     $("#statusMsg3").html(" ");
 }
+
+//Ajax call for student login verification
+function checkStuLogin(){
+   var stuLogEmail = $("#stuLogemail").val();
+   var stuLogPass = $("#stuLogpass").val();
+   $.ajax({
+    url:"Student/addstudent.php",
+    method:"POST",
+    data:{
+        checkLogemail:"checklogmail",
+        stuLogEmail:stuLogEmail,
+        stuLogPass:stuLogPass,
+    },
+    success:function(data){
+        if(data == 0){
+            $("#statusLogMsg").html('<small class="alert alert-danger">Invalid Email ID or Password !</small>')
+        }else if(data == 1){
+            $("#statusLogMsg").html(
+                '<div class="spinner-border text-success" role="status"></div>'
+            );
+            setTimeout(()=>{
+                window.location.href = "index.php";
+            },1000);
+        }
+    }
+   });
+}

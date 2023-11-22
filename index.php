@@ -15,7 +15,14 @@
     <div class="vid-content">
       <h1 class="my-content">Welcome to E-Learning</h1>
       <small class="my-content">learn and implement</small> <br>
-      <a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModalCenter">Get Stated</a>
+      <?php
+        if(!isset($_SESSION['is_login'])){
+          echo '<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModalCenter">Get Stated</a>';
+        }else{
+          echo '<a href="#" class="btn btn-primary mt-3">My Profile</a>';
+        }
+      ?>
+      
     </div>
    </div>
    <!-- End Video Background -->
@@ -152,11 +159,11 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae voluptas voluptatibus sequi temporibus? Illo aliquam vel ipsam consequuntur laborum?
                 </p>
                 <div class="pic">
-                  <img src="images/placeholder.jpg" alt="">
+                  <img src="images/ibrahim.jpg" width="80px" height="100px" alt="">
                 </div>
                 <div class="testimonial-prof">
-                  <h4>Sonam</h4>
-                  <small>Web Developer</small>
+                  <h4>Ibrahim Khan</h4>
+                  <small>Mobile application Developer</small>
                 </div>
               </div>
             </div>

@@ -58,7 +58,8 @@
               <!-- end student login form -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="stuLoginBtn">Login</button>
+          <small id="statusLogMsg"></small>
+          <button type="button" class="btn btn-primary" onclick="checkStuLogin()" id="stuLoginBtn">Login</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
@@ -92,13 +93,13 @@
               <!-- end Admin login form -->
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-primary" id="adminLoginBtn">Login</button>
+          <button type="button" class="btn btn-primary" id="adminLoginBtn" onclick="checkAdminLogin()">Login</button>
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
         </div>
       </div>
     </div>
   </div>
-    <!-- end student login modal -->
+    <!-- end admin login modal -->
 
 
 
@@ -106,6 +107,9 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/all.min.js"></script>
+<!-- Student Ajax call javascript -->
 <script type="text/javascript" src="js/ajaxrequest.js"></script>
+<!-- Admin Ajax call javascript -->
+<script type="text/javascript" src="js/adminajaxrequest.js"></script>
 </body>
 </html>
