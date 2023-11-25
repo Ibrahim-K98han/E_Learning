@@ -13,7 +13,7 @@
       <div class="vid-overlay"></div>
     </div>
     <div class="vid-content">
-      <h1 class="my-content">Welcome to E-Learning</h1>
+      <h1 class="my-content">Welcome to E-learning for IT graduate</h1>
       <small class="my-content">learn and implement</small> <br>
       <?php
         if(!isset($_SESSION['is_login'])){

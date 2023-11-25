@@ -8,13 +8,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
     <!--Custom CSS-->
     <link rel="stylesheet" href="css/style.css">
-    <title>E-Learning</title>
+    <title>E-learning For IT Graduate</title>
 </head>
 <body>
    <!--Start Navigation-->
    <nav class="navbar navbar-expand-sm navbar-dark pl-5 fixed-top">
-  <a class="navbar-brand" href="index.php">E-Learning</a>
-  <span class="navbar-text">Learn and Implement</span>
+  <a class="navbar-brand" href="index.php">E-learning For IT Graduate</a>
+  <!-- <span class="navbar-text">Learn and Implement</span> -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
