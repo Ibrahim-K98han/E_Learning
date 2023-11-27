@@ -19,7 +19,7 @@
 <body>
    <!-- Top Navbar -->
    <nav class="navbar navbar-dark fixed-top p-0 shadow" style="background-color:#225470;">
-    <a href="adminDashboard.php" class="navbar-brand col-sm-3 col-md-2 mr-0">E-learning For IT Graduate <small>ADMIN Area</small></a>
+    <a href="adminDashboard.php" class="navbar-brand col-sm-3 col-md-2 mr-0">ADMIN</a>
    </nav>
 
    <!-- Side Bar -->

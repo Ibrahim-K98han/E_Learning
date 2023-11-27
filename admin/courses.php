@@ -1,7 +1,15 @@
 <?php
+    if(!isset($_SESSION)){
+        session_start();
+    }
     include 'admininclude/header.php';
     include '../dbConnection.php';
 
+    if(isset($_SESSION['is_admin_login'])){
+        $adminEmail = $_SESSION['adminLogEmail'];
+    }else{
+        echo "<script>location.href='../index.php';</script>";
+    }
 ?>
 
 <div class="col-sm-9 mt-5">
@@ -29,10 +37,14 @@
             echo '<td>'.$row['course_name'].'</td>';
             echo '<td>'.$row['course_author'].'</td>';
             echo '<td>';
-                    echo '<button class="btn btn-info mr-3" type="submit" name="view" value="view">
-                        Edit
-                        <!-- <i class="far fa-open"></i> -->
-                    </button>
+            echo '
+                    <form action="editcourse.php" method="POST" class="d-inline">
+                        <input type="hidden" name="id" value='.$row["course_id"].'>
+                        <button class="btn btn-info mr-3" type="submit" name="view" value="view">
+                            Edit
+                            <!-- <i class="far fa-open"></i> -->
+                        </button>
+                    </form>
                     <form action="" method="POST" class="d-inline">
                         <input type="hidden" name="id" value='.$row["course_id"].'>
                         <button class="btn btn-secondary" type="submit" name="delete" value="Delete">
