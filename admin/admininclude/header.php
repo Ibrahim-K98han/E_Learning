@@ -39,7 +39,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="lesson.php" class="nav-link">
                                Lessons
                             </a>
                         </li>  
