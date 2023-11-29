@@ -5,12 +5,17 @@
 <!-- End Including Header -->
 
 <!-- Start Course Page Banner -->
-   <div class="container-fluid bg-dark">
-    <div class="row">
-        <img src="./images/coursebanner.jpg" alt="course" 
-        style="height:500px; width:100%; object-fit:cover; box-shadow:10px;">
+  <div class="vid-parent">
+      <video playsinline autoplay muted loop>
+        <source src="video/banvid.mp4">
+      </video>
+      <div class="vid-overlay"></div>
     </div>
-   </div>
+    <div class="vid-content">
+      <h2 class="my-content">E-learning For IT Graduate</h2>
+      <br>
+      <h4 class="my-content">learn and implement</h4> <br>    
+    </div>
 
 <!-- End Course Page Banner -->
 

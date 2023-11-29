@@ -13,13 +13,14 @@
       <div class="vid-overlay"></div>
     </div>
     <div class="vid-content">
-      <h1 class="my-content">Welcome to E-learning for IT graduate</h1>
-      <small class="my-content">learn and implement</small> <br>
+      <h2 class="my-content">Welcome To E-learning For IT Graduate</h2>
+      <br>
+      <h4 class="my-content">learn and implement</h4> <br>  
       <?php
         if(!isset($_SESSION['is_login'])){
           echo '<a href="#" class="btn btn-danger" data-toggle="modal" data-target="#stuRegModalCenter">Get Stated</a>';
         }else{
-          echo '<a href="#" class="btn btn-primary mt-3">My Profile</a>';
+          echo '<a href="student/studentProfile.php" class="btn btn-primary mt-3">My Profile</a>';
         }
       ?>
       
@@ -196,7 +197,6 @@
       </div>
     </div>
     <!-- End About section -->
-
 
 <!-- Start Including Footer -->
       <?php
