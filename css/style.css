@@ -1,3 +1,24 @@
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 0;
+}
+.scrollingClass {
+    background: #fff;
+    color: #000;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.scrollingClass a {
+    color: #242222 !important;
+}
+.scrollingClass #navbarNav ul li a {
+    color: #000 !important;
+}
+
+.customVideoBg{
+    margin: auto 0px !important; 
+}
 .navbar-brand {
     font-family: 'Ubuntu', sans-serif;
     font-size: 2em;
@@ -45,9 +66,10 @@ video {
     position: absolute;
     z-index: 2;
     top: 35%;
-    left: 35%;
+    left: 0;
     text-align: center;
     color: #fff;
+    right: 0;
 }
 
 .bottom-banner {

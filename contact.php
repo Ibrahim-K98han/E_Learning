@@ -11,7 +11,7 @@
         </form>
       </div>
       <div class="col-md-4 stripe text-orange text-center">
-        <h4>E-Learning</h4>
+        <h6>Welcome to E-learning for IT graduate</h6>
         <p>E-Learning,
          Demra Jatrabari,
          Phone:017518000 <br> 

@@ -1,11 +1,11 @@
 <!-- Start Including Header -->
-    <?php
+<?php
       include('./mainInclude/header.php');
     ?>
 <!-- End Including Header -->
 
    <!-- Start Video Background -->
-   <div class="container-fluid remove-vid-marg">
+   <div class=" customVideoBg remove-vid-marg">
     <div class="vid-parent">
       <video playsinline autoplay muted loop>
         <source src="video/banvid.mp4">
@@ -149,27 +149,7 @@
    <!-- End Contact Us -->
 
    <!-- Start Students Testimonial -->
-    <div class="container-fluid mt-5" style="background-color: #4B7289" id="feedback">
-        <h1 class="text-center testyheading p-4">Student's Feedback</h1>
-        <div class="row">
-          <div class="col-md-12">
-            <div id="testimonial-slider" class="owl-carousel">
-              <div class="testimonial">
-                <p class="description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda recusandae voluptas voluptatibus sequi temporibus? Illo aliquam vel ipsam consequuntur laborum?
-                </p>
-                <div class="pic">
-                  <img src="images/ibrahim.jpg" width="80px" height="100px" alt="">
-                </div>
-                <div class="testimonial-prof">
-                  <h4>Ibrahim Khan</h4>
-                  <small>Mobile application Developer</small>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
+    
    <!-- End Students Testimonial -->
 
    <!-- Start social section -->
@@ -216,8 +196,6 @@
       </div>
     </div>
     <!-- End About section -->
-
-
 
 
 <!-- Start Including Footer -->
