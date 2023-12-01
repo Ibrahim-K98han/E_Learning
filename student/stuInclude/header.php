@@ -33,58 +33,45 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <!-- Top Navbar -->
-    <nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow" style="background-color: #225470;">
-        <a href="studentProfile.php" class="navbar-brand col-sm-3 col-md-2 mr-0">E-learning For IT Graduate</a>
-    </nav>
-    <!-- Side Bar -->
-    <div class="container-fluid mb-5" style="margin-top:40px;">
-        <div class="row">
-            <nav class="col-sm-3 col-md-2 bg-light sidebar py-5 d-print-none">
-                <div class="sidebar-sticky">
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-3">
-                          <img src="<?php echo $stu_img?>" alt="studentimage"
-                          class="img-thumbnail rounded-circle">
-                        </li>
-                        <li class="nav-item">
-                            <a href="courses.php" class="nav-link">
-                                Courses
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="lesson.php" class="nav-link">
-                               Lessons
-                            </a>
-                        </li>  
-                        <li class="nav-item">
-                            <a href="students.php" class="nav-link">Students</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                               Sell Report
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                               Payment Status
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                               Feedback
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="adminChangePass.php" class="nav-link">
-                              Change Password
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="../logout.php" class="nav-link">
-                               Logout
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+<!-- Top Navbar -->
+<nav class="navbar navbar-dark fixed-top flex-md-nowrap p-0 shadow" style="background-color: #225470;">
+    <a href="studentProfile.php" class="navbar-brand col-sm-3 col-md-2 mr-0">E-learning For IT Graduate</a>
+</nav>
+<!-- Side Bar -->
+<div class="container-fluid mb-5" style="margin-top:40px;">
+    <div class="row">
+        <nav class="col-sm-3 col-md-2 bg-light sidebar py-5 d-print-none">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-3">
+                        <img src="<?php echo $stu_img?>" alt="studentimage"
+                        class="img-thumbnail rounded-circle">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentProfile.php">
+                            Profile <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="myCourse.php">
+                            My Courses
+                        </a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentChangePass.php">
+                            Change Password
+                        </a>
+                    </li>  
+                    <li class="nav-item">
+                        <a href="../logout.php" class="nav-link">
+                            Logout
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="../index.php" class="nav-link">
+                            Home
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>

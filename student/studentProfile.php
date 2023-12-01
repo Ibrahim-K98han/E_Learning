@@ -29,7 +29,7 @@
             $stuOcc = $_REQUEST["stuOcc"];
             $stu_image = $_FILES['stuImg']['name'];
             $stu_image_temp = $_FILES['stuImg']['tmp_name'];
-            $img_folder = '../image/stu/'.$stu_image;
+            $img_folder = '../images/stu/'.$stu_image;
             move_uploaded_file($stu_image_temp, $img_folder);
             $sql = "UPDATE student SET stu_name = '$stuName', 
             stu_occ = '$stuOcc', stu_img = '$img_folder' WHERE stu_email = '$stuEmail'";
@@ -68,7 +68,7 @@
         </div>
         <div class="form-group">
             <label for="stuImg">Upload Image</label>
-            <input type="file" class="form-control" id="stuImg" name="stuImg">
+            <input type="file" class="form-control-file" id="stuImg" name="stuImg">
         </div>
         <button type="submit" class="btn btn-primary" name="updateStuNameBtn">Update</button>
         <?php if(isset($passmsg)) {echo $passmsg;}?>
