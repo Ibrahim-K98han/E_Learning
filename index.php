@@ -1,5 +1,6 @@
 <!-- Start Including Header -->
 <?php
+      include('./dbConnection.php');
       include('./mainInclude/header.php');
     ?>
 <!-- End Including Header -->
@@ -53,45 +54,29 @@
       <h1 class="text-center">Popular Course</h1>
       <!-- Start Most Popular Course 1st card deck -->
       <div class="card-deck mt-4">
-        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
-          <div class="card">
-            <img src="images/java.png" alt="Guitar" />
-            <div class="card-body">
-              <h5 class="card-title">Learn JAVA Easy Way</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
-          <div class="card">
-            <img src="images/java.png" alt="Guitar" />
-            <div class="card-body">
-              <h5 class="card-title">Learn JAVA Easy Way</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
-          </div>
-        </a>
-        <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
-          <div class="card">
-            <img src="images/java.png" alt="Guitar" />
-            <div class="card-body">
-              <h5 class="card-title">Learn JAVA Easy Way</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
-          </div>
-        </a>
+      <?php
+          $sql = "SELECT * FROM course LIMIT 3";
+          $result = $conn->query($sql);
+          if($result->num_rows > 0){
+            while ($row = $result->fetch_assoc()){
+              $course_id = $row['course_id'];
+              echo '
+              <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
+              <div class="card">
+                <img src="'.str_replace('..','.',$row['course_img']).'" alt="'.str_replace('..','.',$row['course_img']).'"/>
+                <div class="card-body">
+                  <h5 class="card-title">'.$row['course_name'].'</h5>
+                  <p class="card-text">'.$row['course_desc'].'</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-text d-inline">Price : <small><del>'.$row['course_original_price'].'</del></small><span class="font-weight-bolder">'.$row['course_price'].' Taka</span></p>
+                    <a href="coursedetails.php" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+                </div>
+              </div>
+            </a>';
+            }
+          }
+        ?>
       </div>
        <!-- End Most Popular Course 1st card deck -->
        <!-- Start Most Popular Course 2nd card deck -->
