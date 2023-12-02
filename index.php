@@ -61,16 +61,16 @@
             while ($row = $result->fetch_assoc()){
               $course_id = $row['course_id'];
               echo '
-              <a href="#" class="btn" style="text-align:left; padding:0px; margin:0px">
+              <a href="coursedetails.php?course_id='.$course_id.'" class="btn" style="text-align:left; padding:0px; margin:0px">
               <div class="card">
-                <img src="'.str_replace('..','.',$row['course_img']).'" alt="'.str_replace('..','.',$row['course_img']).'"/>
+                <img src="'.str_replace('..','.',$row['course_img']).'" alt="'.str_replace('..','.',$row['course_img']).'" class="card-img-top"/>
                 <div class="card-body">
                   <h5 class="card-title">'.$row['course_name'].'</h5>
                   <p class="card-text">'.$row['course_desc'].'</p>
                 </div>
                 <div class="card-footer">
                   <p class="card-text d-inline">Price : <small><del>'.$row['course_original_price'].'</del></small><span class="font-weight-bolder">'.$row['course_price'].' Taka</span></p>
-                    <a href="coursedetails.php" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
+                    <a href="coursedetails.php?course_id='.$course_id.'" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
                 </div>
               </div>
             </a>';
@@ -79,51 +79,37 @@
         ?>
       </div>
        <!-- End Most Popular Course 1st card deck -->
+
        <!-- Start Most Popular Course 2nd card deck -->
        <div class="card-deck mt-4">
-        <a href="#" class="btn" style="text-align:left; padding:0px;">
-          <div class="card">
-            <img src="images/python.png" class="card-img-top" alt="Python" />
-            <div class="card-body">
-              <h5 class="card-title">Learn Python</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
+  <?php
+    $sql = "SELECT * FROM course LIMIT 3, 3";
+    $result = $conn->query($sql);
+    if($result->num_rows > 0){
+      while ($row = $result->fetch_assoc()){
+        $course_id = $row['course_id'];
+        echo '
+        <a href="coursedetails.php?course_id='.$course_id.'" class="btn" style="text-align:left; padding:0px; margin:0px">
+        <div class="card">
+          <img src="'.str_replace('..','.',$row['course_img']).'" alt="'.str_replace('..','.',$row['course_img']).'"/>
+          <div class="card-body">
+            <h5 class="card-title">'.$row['course_name'].'</h5>
+            <p class="card-text">'.$row['course_desc'].'</p>
           </div>
-        </a>
-        <a href="#" class="btn" style="text-align:left; padding:0px;">
-          <div class="card">
-            <img src="images/python.png" class="card-img-top" alt="Python" />
-            <div class="card-body">
-              <h5 class="card-title">Learn Python</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
+          <div class="card-footer">
+            <p class="card-text d-inline">Price : <small><del>'.$row['course_original_price'].'</del></small><span class="font-weight-bolder">'.$row['course_price'].' Taka</span></p>
+              <a href="coursedetails.php?course_id='.$course_id.'" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
           </div>
-        </a>
-        <a href="#" class="btn" style="text-align:left; padding:0px;">
-          <div class="card">
-            <img src="images/python.png" class="card-img-top" alt="Python" />
-            <div class="card-body">
-              <h5 class="card-title">Learn Python</h5>
-              <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero recusandae nesciunt dicta debitis ullam exercitationem voluptates provident fugit, sed ratione!</p>
-            </div>
-            <div class="card-footer">
-              <p class="card-text d-inline">Price : <small><del>TK 2000</del></small><span class="font-weight-bolder">Tk 200</span></p>
-                <a href="#" class="btn btn-primary text-white font-weight-bolder float-right">Enroll</a>
-            </div>
-          </div>
-        </a>
+        </div>
+      </a>';
+      }
+    }
+  ?>
+        
       </div>
        <!-- End Most Popular Course 2nd card deck -->
        <div class="text-center m-2">
-        <a href="#" class="btn btn-danger btn-sm">View All Course</a>
+        <a href="courses.php" class="btn btn-danger btn-sm">View All Course</a>
        </div>
     </div>
    <!-- End most popular course -->

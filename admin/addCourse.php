@@ -28,12 +28,9 @@
             $course_image_temp = $_FILES['course_img']['tmp_name'];
             $img_folder = '../images/courseimg/'.$course_image;
             move_uploaded_file($course_image_temp, $img_folder);
-
-            $sql = "INSERT INTO course (course_name, course_desc, course_author, course_img, 
-            course_duration, course_price, course_original_price) 
-            VALUES ('$course_name','$course_desc','$course_author','$img_folder',
+            $sql = "INSERT INTO course(course_name, course_desc, course_author, course_img, 
+            course_duration, course_price, course_original_price) VALUES ('$course_name','$course_desc','$course_author','$img_folder',
             '$course_duration','$course_price','$course_original_price')";
-
             if($conn->query($sql) == TRUE){
                 $msg = '<div class="alert alert-success col-sm-6 ml-5 mt-2">Course Added Successfully</div>';
             }else{
