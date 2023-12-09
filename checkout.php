@@ -18,7 +18,10 @@
     <title>Checkout</title>
 </head>
 <body>
-    <h1>Checkout Page</h1>
+     <div style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+        <img src="images/checkout.png" alt="Centered Image">
+    </div>
+    <a href="courses"></a>
 </body>
 </html>
 
